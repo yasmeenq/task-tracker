@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Task Tracker</title>
+        <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
+        <!-- media="screen" specifies the intended media for the linked stylesheet. 
+        In this case, screen indicates that the stylesheet is intended for computer screens.
+        Other possible values for the media attribute include print (for printed documents), all (for all devices), 
+        and specific media queries like media="(max-width: 600px)" for responsive design targeting specific screen sizes.   -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+     
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Task Tracker by yasmine</div>
+            </nav>
+        </header>
+        <div class="container">
+
+            <p>
+                <label for="new-task" class="middle">Add Task</label>
+                <!-- for="new-task": When the user clicks on the "Add Task" label, 
+                the cursor will automatically be placed in the input field with the id="new-task" -->
+                <input id="new-task" type="text">
+                <button>+</button>
+            </p>
+
+            <h3 class="middle">To-do</h3>
+            <ul id="incomplete-tasks"></ul>
+
+            <h3 class="middle">Completed Tasks</h3>
+            <ul id="completed-tasks"></ul>
+        </div>
+
+        <script src="main.js"></script> 
+    </body>
+</html>
